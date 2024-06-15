@@ -6,7 +6,7 @@
 ***requirement-seq*** - последовательность требований:
 - [simple requirement](#simple-requirement)
 - [type requirement](#Type-requirement)
-- compound requirement[[#^a5101c]]
+- [compound requirement](compound-requirement)
 - nested requirement
 
 **Локальные параметры**
@@ -42,7 +42,7 @@ static_assert(IsType<Buffer<int>>, "error");// ok
 static_assert(IsType<int>, "error");// error
 ```
 
-**Compound requirement**
+## Compound requirement
 Проверка подстановки и семантических ограничений выполняется в следующем порядке: ^a5101c
 1. Аргументы шаблона, если есть
 2. Если используется `noexcept`, то набор потенциальных исключений в выражении должен быть пуст до c++17 и выражение не вызывает исключение в c++17
