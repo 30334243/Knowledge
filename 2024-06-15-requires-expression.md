@@ -3,7 +3,9 @@
 **Синтаксис**
 1. requires { requirement-seq }
 2. requires ( parameter-list (optional) ) { requirement-seq }
+
 ***parameter-list*** - список параметров
+   
 ***requirement-seq*** - последовательность требований:
 - [simple requirement](#simple-requirement)
 - [type requirement](#type-requirement)
