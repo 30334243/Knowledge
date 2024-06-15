@@ -1,4 +1,5 @@
 Возвращает выражение prvalue типа bool, которое описывает ограничение.
+
 **Синтаксис**
 1. requires { requirement-seq }
 2. requires ( parameter-list (optional) ) { requirement-seq }
