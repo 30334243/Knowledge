@@ -5,7 +5,7 @@
 ***parameter-list*** - список параметров
 ***requirement-seq*** - последовательность требований:
 - [simple requirement](#simple-requirement)
-- type requirement[[#^1d9fc5]]
+- [type requirement](#Type-requirement)
 - compound requirement[[#^a5101c]]
 - nested requirement
 
@@ -25,7 +25,7 @@ static_assert(is_sum<int>, "error");// ok
 static_assert(is_sum<std::vector>, "error");//error
 ```
 
-**Type requirement** ^1d9fc5
+##Type requirement
 ``` cpp
 template<class T>  
 struct Buffer {  
