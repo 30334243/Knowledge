@@ -4,7 +4,7 @@
 2. requires ( parameter-list (optional) ) { requirement-seq }
 ***parameter-list*** - список параметров
 ***requirement-seq*** - последовательность требований:
-- simple requirement[[#^Simple requirement]] [simple requirement](#simple-requirement)
+- [simple requirement](#simple-requirement)
 - type requirement[[#^1d9fc5]]
 - compound requirement[[#^a5101c]]
 - nested requirement
