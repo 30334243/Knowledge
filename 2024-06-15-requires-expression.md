@@ -25,7 +25,7 @@ static_assert(is_sum<int>, "error");// ok
 static_assert(is_sum<std::vector>, "error");//error
 ```
 
-##Type requirement
+## Type requirement
 ``` cpp
 template<class T>  
 struct Buffer {  
