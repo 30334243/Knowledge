@@ -5,8 +5,8 @@
 ***parameter-list*** - список параметров
 ***requirement-seq*** - последовательность требований:
 - [simple requirement](#simple-requirement)
-- [type requirement](#Type-requirement)
-- [compound requirement](compound-requirement)
+- [type requirement](#type-requirement)
+- [compound requirement](#compound-requirement)
 - nested requirement
 
 **Локальные параметры**
