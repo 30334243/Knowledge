@@ -46,7 +46,9 @@ static_assert(IsType<int>, "error");// error
 ```
 
 ## Compound requirement
-Проверка подстановки и семантических ограничений выполняется в следующем порядке: ^a5101c
+Форма записи
+`{ expression } noexcept(optional) return-type-requirement ﻿(optional);`		
+Проверка подстановки и семантических ограничений выполняется в следующем порядке:
 1. Аргументы шаблона, если есть
 2. Если используется `noexcept`, то набор потенциальных исключений в выражении должен быть пуст до c++17 и выражение не вызывает исключение в c++17
 3. Если `return-type-requirement` используется:
@@ -66,3 +68,8 @@ concept IsType = requires(T t)
 static_assert(IsType<decltype(kArr1)>, "error");// ok
 static_assert(IsType<decltype(kArr2)>, "error");// error
 ```
+
+## Nested requirements
+Форма записи
+`requires constraint-expression;`
+Может использоваться в локальных параметрах. `constraint-expression` должно удовлетворять подстановке аргументов шаблона, если они есть.
